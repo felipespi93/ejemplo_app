@@ -1,0 +1,97 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Agregar Cirugía <ion-icon color="primary" name="add-circle"></ion-icon>
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+<!--  <ion-item-divider color="secondary">
+    <ion-label>
+      <i>* campos obligatorios</i>
+    </ion-label>
+  </ion-item-divider>-->
+  
+<!-- with name set -->
+  <ion-item-group>
+    <ion-item-divider>
+      <ion-label>1. Datos del paciente</ion-label>
+    </ion-item-divider>
+  
+    <ion-item>
+      <ion-label>Rut paciente</ion-label><ion-label color="danger">&nbsp; * </ion-label>
+      <ion-input></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>Nombre paciente</ion-label><ion-label color="danger">&nbsp; * </ion-label>
+      <ion-input></ion-input>
+    </ion-item>
+  </ion-item-group>
+
+  <ion-item-group> 
+      <ion-item-divider>
+        <ion-label>2. Datos del procedimiento</ion-label>
+      </ion-item-divider>
+      <ion-item>
+          <ion-label>Fecha <i color="red">*</i></ion-label>
+          <ion-datetime display-format="DD MMM, YYYY HH:mm"></ion-datetime>
+      </ion-item> 
+      <ion-item>
+          <ion-label>Diagnóstico *</ion-label>
+          <ion-select multiple="false" cancelText="Cancelar" okText="Seleccionar">
+            <ion-select-option value="bacon">Bacon</ion-select-option>
+            <ion-select-option value="olives">Black Olives</ion-select-option>
+            <ion-select-option value="xcheese">Extra Cheese</ion-select-option>
+            <ion-select-option value="peppers">Green Peppers</ion-select-option>
+            <ion-select-option value="mushrooms">Mushrooms</ion-select-option>
+            <ion-select-option value="onions">Onions</ion-select-option>
+            <ion-select-option value="pepperoni">Pepperoni</ion-select-option>
+            <ion-select-option value="pineapple">Pineapple</ion-select-option>
+            <ion-select-option value="sausage">Sausage</ion-select-option>
+            <ion-select-option value="Spinach">Spinach</ion-select-option>
+          </ion-select>
+        </ion-item>
+        <ion-item>
+            <ion-label>Procedimiento *</ion-label>
+            <ion-select multiple="false" cancelText="Cancelar" okText="Seleccionar">
+              <ion-select-option value="bacon">Bacon</ion-select-option>
+              <ion-select-option value="olives">Black Olives</ion-select-option>
+              <ion-select-option value="xcheese">Extra Cheese</ion-select-option>
+              <ion-select-option value="peppers">Green Peppers</ion-select-option>
+              <ion-select-option value="mushrooms">Mushrooms</ion-select-option>
+              <ion-select-option value="onions">Onions</ion-select-option>
+              <ion-select-option value="pepperoni">Pepperoni</ion-select-option>
+              <ion-select-option value="pineapple">Pineapple</ion-select-option>
+              <ion-select-option value="sausage">Sausage</ion-select-option>
+              <ion-select-option value="Spinach">Spinach</ion-select-option>
+            </ion-select>
+          </ion-item>
+          <ion-item>
+              <ion-label>Observaciones</ion-label>
+              <ion-textarea clearOnEdit="true"></ion-textarea>
+          </ion-item>
+          <ion-item>
+              <ion-label>Participación *</ion-label>
+              <ion-select multiple="false" cancelText="Cancelar" okText="Seleccionar">
+                <ion-select-option value="bacon">Cirujano</ion-select-option>
+                <ion-select-option value="olives">Primer ayudante</ion-select-option>
+                <ion-select-option value="xcheese">Segundo ayudante</ion-select-option>
+              </ion-select>
+          </ion-item>
+          <ion-item>
+              <ion-label>Tutor *</ion-label>
+              <ion-select multiple="false" cancelText="Cancelar" okText="Seleccionar">
+                <ion-select-option value="bacon">Cirujano</ion-select-option>
+                <ion-select-option value="olives">Primer ayudante</ion-select-option>
+                <ion-select-option value="xcheese">Segundo ayudante</ion-select-option>
+              </ion-select>
+          </ion-item>
+            <br>
+          <ion-button expand="block" fill="outline">Guardar Cirugía</ion-button>
+          <br> <br>
+    </ion-item-group>
+
+
+
+</ion-content>
